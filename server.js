@@ -13,7 +13,7 @@ var article1 = {
     content:'This is the content for article 1. It is just a basic web page written in html. This is the content for article 1. It is just a basic web page written in html. This is the content for article 1. It is just a basic web page written in html'
     
     
-}
+};
 
 
 
@@ -22,7 +22,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-1', function (req, res){
-  res.send(createTemplate(article1))
+  res.send(createTemplate(article1));
 });    
  
 app.get('/article-2', function (req, res){
