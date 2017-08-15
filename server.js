@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var content = {
+var article1 = {
     title: 'article 1 I awesome vaaman',
     heading:'article 1',
     date: 'August 11, 2017',
@@ -22,7 +22,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-1', function (req, res){
-  res.sendFile(path.join(__dirname, 'ui', 'article-1.html'));
+  res.send(createTemplate(article1))
 });    
  
 app.get('/article-2', function (req, res){
