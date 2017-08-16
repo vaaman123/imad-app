@@ -7,7 +7,7 @@ element.innerHTML = 'I am vaaman who are you';
 var img = document.getElementById('madi');
 var marginLeft = 10;
 function moveRight () {
-    marginLeft = marginLeft + 5;
+    marginLeft = marginLeft + 1;
     img.style.marginLeft = marginLeft + 'px';
 }
 img.onclick = function (){
