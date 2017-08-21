@@ -1,6 +1,11 @@
 var button = document.getElementById('counter');
 button.onclick = function (){
     
+    var counter = button.onclick;
+   
+    
+    counter = counter + 1;
+    
     
     
     var request = new XMLHttpRequest ();
