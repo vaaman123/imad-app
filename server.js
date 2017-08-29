@@ -117,7 +117,7 @@ app.get('/hash/:input', function (req, res) {
     res.send(hashedString);
 });
 
-app.post('/create-user', function (req, res){
+app.send('/create-user', function (req, res){
     var username = req.body.username;
     var password = req.body.password;
     var salt = crypto.getrandomBytes(128).toString('hex');
